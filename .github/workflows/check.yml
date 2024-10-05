@@ -1,0 +1,30 @@
+name: CI
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: VALIDATE - CHECK USER BRANCH NAME
+        id: check-github-branch
+        uses: goshencollege/validate-branch-name@v1.0.1
+        with:
+          pattern: my-branch
+          
+      - name: VALIDATE BRANCH NAME IN_README
+        id: find_branch_name
+        uses: nguyenvanuyn96/str-find-action@master
+        with:
+          find: "The name of my branch is: my-branch"
+          include: "README.md"
+          
+      - name: FAIL IF BRANCH NAME NOT FOUND IN README
+        if: ${{ steps.find_branch_name.outputs.fileFoundCount == 0 }}
+        uses: actions/github-script@v3
+        with:
+          script: |
+            core.setFailed('branch name not found in the line with `The name of my branch is: `')
