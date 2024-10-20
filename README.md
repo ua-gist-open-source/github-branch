@@ -20,7 +20,7 @@ The name of my branch is:
 
 2. When you have created your branch with this file modified above, create a *Pull Request* to merge your new branch into `master`.
 Be sure to give a description so that the *Reviewer* knows what you are creating, fixing, deleting, or improving. When you submit 
-your Pull Request you will see that a Review is required and that Merging is blocked.
+your Pull Request you should **NOT MERGE** .
 
 3. Once you have created your *Pull Request*, let the instructor know and thet will review it. You should receive a notification (See your [Settings](https://github.com/settings/notifications))
 
