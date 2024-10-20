@@ -22,4 +22,6 @@ The name of my branch is:
 Be sure to give a description so that the *Reviewer* knows what you are creating, fixing, deleting, or improving. When you submit 
 your Pull Request you will see that a Review is required and that Merging is blocked.
 
-3. Once you have created your *Pull Request*, let the instructor know and thet will review it. You should receive a notification (See your [Settings](https://github.com/settings/notifications)) 
+3. Once you have created your *Pull Request*, let the instructor know and thet will review it. You should receive a notification (See your [Settings](https://github.com/settings/notifications))
+
+4. **Important! DO NOT MERGE**. The instructor will only be grading assignments when they have _Open_ Pull Requests. 
